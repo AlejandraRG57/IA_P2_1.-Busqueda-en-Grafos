@@ -20,7 +20,7 @@ def BFS(grafo, inicio, meta):
             fila.extend(grafo[nodo] - explorado)#Agregamos los nodos vecinos no visitados a la cola.
     return None
 
-grafo = {            #Declaramos nuestro grafo en base a la imagen "00.1_Mapa-de-Busqueda_Imagen-Referencia.png".
+grafo = {            #Declaramos nuestro grafo en base a la imagen "00.2_Mapa-de-Busqueda_Imagen-Referencia.png".
     'A': {'B', 'E'},
     'B': {'A', 'C'},
     'C': {'B', 'D', 'F'},
