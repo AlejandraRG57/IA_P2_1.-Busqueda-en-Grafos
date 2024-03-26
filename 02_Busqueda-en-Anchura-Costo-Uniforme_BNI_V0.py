@@ -28,21 +28,21 @@ def UCS(grafo, inicio, meta): #Definimos una función llamada UCS que realiza la
 
     return None #No se encontró un camino desde el nodo de inicio hasta el nodo objetivo.
 
-grafo = {            #Declaramos nuestro grafo en base a la imagen "00.2_Mapa-de-Busqueda_Imagen-Referencia.png" y les damos a todos un peso de 1.
-    'A': {'B':1, 'E':1},
-    'B': {'A':1, 'C':1},
-    'C': {'B':1, 'D':1, 'F':1},
-    'D': {'C':1, 'I':1},
-    'E': {'A':1, 'F':1, 'G':1, 'H':1},
-    'F': {'C':1, 'E':1},
-    'G': {'E':1, 'J':1},
-    'H': {'E':1, 'I':1, 'J':1},
-    'I': {'D':1, 'H':1, 'L':1},
-    'J': {'G':1, 'H':1, 'K':1, 'M':1},
-    'K': {'J':1, 'L':1},
-    'L': {'I':1, 'K':1, 'N':1},
-    'M': {'J':1, 'N':1},
-    'N': {'L':1, 'M':1}
+grafo = {            #Declaramos nuestro grafo en base a la imagen "00.4_Mapa-de-Busqueda_Imagen-Referencia.png" y les asignamos costos por su separacion.
+    'A': {'B':3, 'E':3},
+    'B': {'A':3, 'C':2},
+    'C': {'B':2, 'D':5, 'F':3},
+    'D': {'C':5, 'I':3},
+    'E': {'A':3, 'F':3, 'G':4, 'H':4},
+    'F': {'C':3, 'E':3},
+    'G': {'E':4, 'J':2},
+    'H': {'E':4, 'I':2, 'J':4},
+    'I': {'D':3, 'H':2, 'L':3},
+    'J': {'G':2, 'H':4, 'K':3, 'M':3},
+    'K': {'J':3, 'L':4},
+    'L': {'I':3, 'K':4, 'N':7},
+    'M': {'J':3, 'N':3},
+    'N': {'L':7, 'M':3}
 }
 
 meta_found = UCS(grafo, 'A', 'N') #Iniciamos la búsqueda en grafo desde el nodo 'A' y buscamos el nodo 'N'.
