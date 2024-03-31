@@ -69,10 +69,6 @@ while not politica_estable:
     valores_estados = evaluar_politica(grafo_decision, politica, valores_estados)
     politica, politica_estable = mejorar_politica(grafo_decision, politica, valores_estados)
 
-print("Valores finales de los estados:") #Imprimimos los valores finales de los estados.
-for estado, valor in valores_estados.items():
-    print(f"{estado}: {valor:.2f}")
-
 print("\nPolítica óptima:") #Imprimimos la política óptima.
 for estado, accion in politica.items():
     print(f"{estado}: {accion}")
