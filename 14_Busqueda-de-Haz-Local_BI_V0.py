@@ -6,7 +6,7 @@
 
 import random
 
-grafo = [
+grafo = [ #Grafo ponderado representado como una matriz de adyacencia, utilizando los datos de la imagen "00.5_Mapa-de-Busqueda_Imagen-Referencia.png".
     [0, 3, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [3, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 2, 0, 5, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0],
