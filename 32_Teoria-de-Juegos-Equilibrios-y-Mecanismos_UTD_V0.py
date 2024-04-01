@@ -22,7 +22,7 @@ def find_nash_equilibrium(G): #Definimos la función para encontrar equilibrios 
     return nash_equilibria #Devolvemos la lista de nodos que alcanzan equilibrios de Nash.
 
 G = nx.Graph() #Creamos un grafo vacío.
-G.add_edge('A', 'B', weight=3) #Añadimos las aristas con sus respectivos pesos.
+G.add_edge('A', 'B', weight=3) #Añadimos las aristas en base a la imagen "00.4_Mapa-de-Busqueda_Imagen-Referencia.png" y les asignamos pesos por su separacion.
 G.add_edge('A', 'E', weight=3)
 G.add_edge('B', 'C', weight=2)
 G.add_edge('C', 'F', weight=3)
